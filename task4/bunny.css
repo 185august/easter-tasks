@@ -1,0 +1,49 @@
+body {
+  margin: 0 auto;
+  display: flex;
+  margin-top: 40px;
+}
+
+#app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+button {
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.all-jump-squares {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  width: fit-content;
+  margin: 0 auto;
+  gap: 0;
+  border: 3px solid black;
+}
+
+.bunny {
+  background-color: brown;
+}
+
+.eggs {
+  background-color: yellow;
+}
+
+.open-space {
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  cursor: pointer;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border: 1px solid lightgray;
+  background-color: green;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
