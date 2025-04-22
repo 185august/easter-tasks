@@ -7,6 +7,7 @@
   width: 300px;
   height: 400px;
   margin: 0 auto;
+  cursor: pointer;
 }
 .one {
   background-color: blue;
@@ -15,5 +16,15 @@
   background-color: blueviolet;
 }
 .three {
-  background-color: coral;
+  background-color: rgb(131, 80, 61);
+}
+
+.game-text {
+  font-size: 75px;
+  padding: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 40px auto;
+  color: rgb(167, 36, 71);
+  border: dashed yellow 3px;
+  border-radius: 50%;
 }

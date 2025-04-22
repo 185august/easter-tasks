@@ -7,7 +7,7 @@ const easterBunny = {
 function howManyEggsDidTheEasterBunnyFind() {
     easterBunny.eggsFound = 0;
     for (let i = 0; i < 5; i++) {
-        const numsOfEggs = randomNumber(0, 3)
+        const numsOfEggs = getRandomNumber(0, 3)
         easterBunny.eggsFound += numsOfEggs
 
     }

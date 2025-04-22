@@ -1,6 +1,7 @@
 const mainModel = {
     app: {
-        currentPage: 'main'
+        currentPage: 'main',
+        isInitialized: false
     }
 }
 function updateView() {
@@ -25,9 +26,15 @@ function updateView() {
             alert('look in console');
             break;
         case 'task4':
+            if (!mainModel.app.isInitialized) {
+                initBunny();
+            }
             currentView = bunnyView();
             break;
         case 'task5':
+            if (!mainModel.app.isInitialized) {
+                initGame();
+            }
             currentView = gameView();
             break;
 

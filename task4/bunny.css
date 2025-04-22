@@ -1,20 +1,3 @@
-body {
-  margin: 0 auto;
-  display: flex;
-  margin-top: 40px;
-}
-
-#app {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-button {
-  width: 100px;
-  height: 50px;
-  margin: 0 auto;
-}
-
 .all-jump-squares {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
@@ -26,11 +9,35 @@ button {
 }
 
 .bunny {
-  background-color: brown;
+  position: relative;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bunny::before {
+  content: "🐰";
+  font-size: 30px;
 }
 
 .eggs {
+  position: relative;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid lightgray;
+}
+
+.eggs::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 40px;
   background-color: yellow;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  box-shadow: inset -3px -3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .open-space {
